@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: none;
+    width: 100vw;
+    overflow: auto;
+}
+
+.cursor,
+.trail {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+.cursor {
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+}
+
+.trail {
+    background-color: rgb(255, 255, 255);
+}
+
+#trail1 {
+    background-color: rgba(192, 192, 209, 0.813);
+}
+
+#trail2 {
+    background-color: rgba(129, 129, 139, 0.667);
+}
+
+#trail3 {
+    background-color: rgba(105, 105, 120, 0.55);
+}
+
+#trail4 {
+    background-color: rgba(30, 30, 32, 0.82);
+}
+
+.left {
+    font-size: 1.5rem;
+    margin-left: -50px;
+}
+
+.right {
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(5, 5, 52);
+    box-shadow: 0px 0px 2px 0px white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.right ul li a:hover {
+    background-color: rgb(03, 02, 33);
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+
+main video {
+    width: 700px;
+    height: 500px;
+    margin-left: 270px;
+}
+
+footer {
+    background-color: rgba(48, 32, 119, 0.927);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+
+/* Add this to your home.css file */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main video {
+    width: 700px;
+    height: 500px;
+    margin-left: 270px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(3, 2, 33);
+    color: #ffcc00;
+    /* Change color on hover for better visibility */
+    height: 30px;
+    width: 30px;
+}
+
+.cursor,
+.trail {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+.cursor {
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+}
+
+.trail {
+    background-color: rgb(214, 214, 225);
+}
+
+#trail1 {
+    background-color: rgba(195, 195, 205, 0.893);
+}
+
+#trail2 {
+    background-color: rgba(118, 118, 132, 0.651);
+}
+
+#trail3 {
+    background-color: rgba(59, 59, 63, 0.785);
+}
+
+#trail4 {
+    background-color: rgb(0, 0, 0);
+}

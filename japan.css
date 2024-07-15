@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.left {
+    font-size: 1.5rem;
+    margin-left: -50px;
+}
+
+.right {
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(5, 5, 52);
+    box-shadow: 0px 0px 2px 0px white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.right ul li a:hover {
+    background-color: rgb(03, 02, 33);
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+
+main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 80%;
+    margin-left: 200px;
+}
+
+.destination {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 33);
+    text-align: center;
+}
+
+.tokyo img {
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    border: solid rgb(23, 12, 146);
+}
+
+.tokyo h2 {
+    margin-top: 10px;
+    margin-left: 35%;
+    font-size: 24px;
+    color: white;
+}
+
+.nagoya img {
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    border: solid rgb(23, 12, 146);
+}
+
+.nagoya h2 {
+    margin-top: 10px;
+    margin-left: 35%;
+    font-size: 24px;
+    color: white;
+}
+
+footer {
+    background-color: rgba(48, 32, 119, 0.927);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
